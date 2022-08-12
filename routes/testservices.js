@@ -27,8 +27,14 @@ exports.getQuoteoftheDay = function (req, res)
     quotes.push(q);
     q = { "id":"7", "quotation":"I came, I saw, I conquered.","author":"Julius Caesar"};
     quotes.push(q);
+    q = { "id":"8", "quotation":"Practice makes perfect.","author":"Vince Lombardi"};
+    quotes.push(q)
+    q = { "id":"9", "quotation":"That which does not kill us makes us stronger","author":"Friedrich Nietzsche"};
+    quotes.push(q);
+    q = { "id":"10", "quotation":"Life is what happens when you re busy making other plans.","author":"John Lennon"};
+    quotes.push(q);
 
-    const id = Math.floor(Math.random() * 8);
+    const id = Math.floor(Math.random() * 10);
     
  
       res.send(quotes[id]);
