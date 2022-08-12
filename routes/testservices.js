@@ -28,7 +28,7 @@ exports.getQuoteoftheDay = function (req, res)
     q = { "id":"7", "quotation":"I came, I saw, I conquered.","author":"Julius Caesar"};
     quotes.push(q);
 
-    const id = Math.floor(Math.random() * 5);
+    const id = Math.floor(Math.random() * 7);
     
  
       res.send(quotes[id]);
