@@ -20,6 +20,7 @@ repository	azuredocs
 resource_group	The name of your resource group
 cluster_name	The name of your cluster 
 
+--YOU WILL ALSO HAVE TO UPDATE THE k8Deploy File yaml
 
 --OTHER STUFF THAT COULD HELP
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
