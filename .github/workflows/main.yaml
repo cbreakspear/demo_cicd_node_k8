@@ -25,8 +25,6 @@ jobs:
           image:  demonodeimage
           branch: master
           tag: ${{ github.sha }}
-          run:
-            docker push ${{ secrets.registry }}.acrcrb2.io/${{ secrets.repository }}/demonodeimage:${{ github.sha }} ${{ secrets.registry }}.acrcrb2.io/demonodeimage:v1
       - name: Azure login
         id: login
         uses: azure/login@v1.4.3
