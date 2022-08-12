@@ -2,8 +2,11 @@ name: build_deploy_aks
 on:
   push:
     branches:
-      - "main"
+      - "master"
   workflow_dispatch:
+
+permissions:
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
