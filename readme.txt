@@ -5,7 +5,7 @@ docker push <registry-name>.azurecr.io/appsvc-tutorial-custom-image:latest
 
 az acr show --name cbtestacr --query "id" --output tsv
 
-az ad sp create-for-rbac --name "myNodeApp" --role contributor --scopes /subscriptions/d52d512f-70d6-4a95-ad00-b5bbdd10f91b/resourceGroups/rg-cbtest
+az ad sp create-for-rbac --name "myNodeDemoApp" --role contributor --scope /subscriptions/71641fdb-8f5f-47a2-997d-0ef754c2ccfb/resourceGroups/rg-delete --sdk-auth
  
 
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
