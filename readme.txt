@@ -20,7 +20,7 @@ docker build -t cbreakspear/mynodeimage .
  Once you have tested the Docker image locally you will push the image to
  docker hub or another repo where you will reference it in you K8 yaml file
  so it can be pulled and deployed into kubernetes
-
+   
 
  ----CREATE AZURE KUBERNETES CLUSTER
  az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 2 --generate-ssh-keys --attach-acr <acrName>
