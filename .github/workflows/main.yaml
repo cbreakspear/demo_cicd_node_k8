@@ -47,4 +47,4 @@ jobs:
           manifests: |
              k8deploy.yaml
           images: '${{ secrets.registry }}.acrcrb2.io/${{ secrets.repository }}/demonodeimage:${{ github.sha }}'
-          pull: false
+          pull: true
