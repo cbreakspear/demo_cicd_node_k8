@@ -23,6 +23,10 @@ exports.getQuoteoftheDay = function (req, res)
     quotes.push(q);
     q = { "id":"5", "quotation":"Do be do be dooo.","author":"Frank Sinatra"};
     quotes.push(q);
+    q = { "id":"6", "quotation":"Get busy living. Or get busy dying","author":"Stephen King"};
+    quotes.push(q);
+    q = { "id":"7", "quotation":"I came, I saw, I conquered.","author":"Julius Caesar"};
+    quotes.push(q);
 
     const id = Math.floor(Math.random() * 5);
     
