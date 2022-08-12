@@ -17,7 +17,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: nodedemo-app
-        image: acrcrb2.azurecr.io/demonodeimage/demonodeimage:${{ github.sha }}
+        image: acrcrb2.azurecr.io/demonodeimage:v1
         resources:
           requests:
             cpu: 100m
